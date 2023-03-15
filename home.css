@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(240,244,245);
+}
+/* nav bar  */
+head{
+    display: inline;
+}
+header{
+    margin-top: 50px;
+    display: inline-grid;
+    grid-template-areas: 
+    'hright hright hleft hleft'
+    'hright hright hleft hleft';
+    grid-template-columns: 10fr;
+    grid-gap: 400px;
+    
+}
+.hright{
+    grid-area: hright;
+    margin-left: 100px ;
+}
+.hleft{
+    grid-area: hleft;
+    margin-top: 20px;
+    
+}
+.hleft a:hover{
+    text-decoration: underline;
+}
+.hleft a{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap:3.5px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+}
+/* main section  */
+main{
+    display: grid;
+    grid-template-areas: 
+    'sleft sleft sright sright'
+    'sleft sleft sright sright';
+    grid-template-columns: 2fr;
+    grid-gap: 50px ;
+    margin-top: 0px;
+}
+/* Right side section  */
+.sright{
+    grid-area: sright;
+    display: inline-grid;
+}
+.sleft{
+    grid-area: sleft;
+}
+.greencir{
+    height: 475px;
+    width: 450px;
+    position: relative;
+    top: -200px;
+    right: -15px;
+    z-index: 1;
+
+}
+.yellowcir{
+    height: 450px;
+    width: 450px; 
+    position: relative;
+    top: -572px;
+    right: -44px;
+    z-index: 2;
+}
+.doctor{
+    height: 600px;
+    width: 550px;
+    position: relative;
+    top: -1240px;
+    right: 65px;
+    z-index: 3;
+}
+
+/* Left side section  */
+.sleft{
+    display: inline-grid;
+}
+.stetho{
+    height: 450px;
+    width: 450px;
+    position: relative;
+    top: -200px;
+    left: 275px;
+    z-index: 1;
+}
+.topAngle{
+    position: relative;
+    top: -700px;
+    left: 100px;
+    z-index: 2;
+}
+.sleft div{
+    position: relative;
+    top: -800px;
+    left: 100px;
+    z-index: 3;
+}
+.sdiv{
+    font-size: 50px;
+    font-weight: bold;
+}
+.sleft p{
+    font-size: medium;
+    font-weight: 500;
+    position: relative;
+    top: -920px;
+    left: 100px;
+    z-index: 4;
+}
+button{
+    position: relative;
+    top: -1020px;
+    left: 100px;
+    background-color: rgb(34,188,126);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50px;
+    border-color: rgb(34,188,126);
+    height: 60px;
+    width: 300px;
+}
+.bottomAngle{
+    position: relative;
+    top: -1150px;
+    left: 650px;
+    z-index: 5;
+}
+.mouse{
+    position: relative;
+    top: -1230px;
+    left: 680px;
+    z-index: 6;
+}

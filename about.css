@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(240,244,245);
+}
+/* nav bar  */
+head{
+    display: inline;
+}
+header{
+    margin-top: 50px;
+    display: inline-grid;
+    grid-template-areas: 
+    'hright hright hleft hleft'
+    'hright hright hleft hleft';
+    grid-template-columns: 10fr;
+    grid-gap: 400px;
+    
+}
+.hright{
+    grid-area: hright;
+    margin-left: 100px ;
+}
+.hleft{
+    grid-area: hleft;
+    margin-top: 20px;
+    
+}
+.hleft a{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap:3.5px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+}
+
+/* main section  */
+.aboutsec{
+    position: relative;
+    margin: auto;
+    top: -150px;
+    left: 470px
+}
+.aboutsec div{
+    justify-content: center;
+    text-align: center;
+}
+.aboutsec h1{
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(37,188,127);
+}
+.aboutsec p{
+    font-size: larger;
+    font-weight: 500;
+    color: black;
+}
+
+/* main section cards  */
+.aboutnav{
+    display: inline-grid;
+    grid-template-areas: 
+    'nav1 nav2 nav3'
+    'nav1 nav2 nav3';
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 40px;
+    position: relative;
+    top: 250px;
+    left: -250px;
+}
+fieldset h2{
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(37,188,127);
+    text-align: center;
+}
+fieldset span{
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+}
+.aboutnav1{
+    grid-area: nav1;
+    height: 100px;
+    width: 200px;
+}
+.aboutnav2{
+    grid-area: nav2;
+    height: 100px;
+    width: 200px;
+}
+.aboutnav3{
+    grid-area: nav3;
+    height: 100px;
+    width: 200px;
+}
+.aboutnav1 span{
+    position: relative;
+    top: -40px;
+    left: 40px;
+}
+.aboutnav2 span{
+    position: relative;
+    top: -40px;
+    left: 15px;
+}
+.aboutnav3 span{
+    position: relative;
+    top: -40px;
+    left: 25px;
+}
